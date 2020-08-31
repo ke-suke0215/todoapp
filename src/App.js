@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Form from './Form';
 import List from './List';
 import shortid from 'shortid';
@@ -16,7 +16,7 @@ const App = () => {
         // }
     ])
 
-    const addTodo = content =>{
+    const addTodo = content => {
         setTodos([
             ...todos,
             {
@@ -33,8 +33,9 @@ const App = () => {
     return (
         <>
             <h1>Todo App</h1>
-            <Form addTodo={addTodo}/>
-            <List todos={todos} deleteTodo={deleteTodo}/>
+            <p>記入してください</p>
+            <Form addTodo={addTodo} />
+            <List todos={todos} deleteTodo={deleteTodo} />
         </>
     )
 }
