@@ -35,6 +35,7 @@ const App = () => {
             <h1>Todo App</h1>
             <p>記入してください</p>
             <Form addTodo={addTodo} />
+            <p>これがリストです</p>
             <List todos={todos} deleteTodo={deleteTodo} />
         </>
     )
