@@ -5,7 +5,7 @@ const List = ({ todos, deleteTodo }) => {
     return (
         <ul>
             {
-                todos.map(todo => {
+                todos.map((todo, index) => {
                     return (
                         <>
                             <p>やることリスト</p>
@@ -14,6 +14,7 @@ const List = ({ todos, deleteTodo }) => {
                                 key={todo.id}
                                 id={todo.id}
                                 deleteTodo={deleteTodo}
+                                index={index}
                             />
                         </>
                     )

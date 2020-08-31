@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Checkbox from '@material-ui/core/Checkbox';
 
-const Item = ({ content, id, deleteTodo }) => {
+const Item = ({ content, id, deleteTodo, index }) => {
     const [isDone, setIsDone] = useState(false)
 
     const handleDelete = () => {
@@ -10,6 +10,7 @@ const Item = ({ content, id, deleteTodo }) => {
 
     return (
         <li>
+            <span>{index + 1}</span>
             <Checkbox
                 onChange={() => {
                     setIsDone(!isDone)
