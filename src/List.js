@@ -8,7 +8,6 @@ const List = ({ todos, deleteTodo }) => {
                 todos.map((todo, index) => {
                     return (
                         <>
-                            <p>やることリスト</p>
                             <Item
                                 content={todo.content}
                                 key={todo.id}
